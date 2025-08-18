@@ -12,37 +12,34 @@
 
 #include <unistd.h>
 
-void	ft_ultimate_ft(int *********nb)
+void	ft_rev_int_tab(int *tab, int size)
 {
-	int	num;
+	int	i;
+	int	temp;
 
-	num = 42;
-	*********nb = num;
+	i = 0;
+	while (i < size / 2)
+	{
+		temp = tab[i];
+		tab[i] = tab[size - 1 - i];
+		tab[size - 1 - i] = temp;
+		i++;
+	}
 }
 
 int	main(void)
 {
-	int	z;
-	int	*a;
-	int	**b;
-	int	***c;
-	int	****d;
-	int	*****e;
-	int	******f;
-	int	*******g;
-	int	********h;
-	int	*********i;
+	int	*arp;
+	int	array[5];
+	int	size;
 
-	z = 0;
-	a = &z;
-	b = &a;
-	c = &b;
-	d = &c;
-	e = &d;
-	f = &e;
-	g = &f;
-	h = &g;
-	i = &h;
-	ft_ultimate_ft(i);
+	array[0] = 2;
+	array[1] = 4;
+	array[2] = 6;
+	array[3] = 8;
+	array[4] = 10;
+	size = sizeof(array) / sizeof(array[0]);
+	arp = array;
+	ft_rev_int_tab(arp, size);
 	return (0);
 }

@@ -12,37 +12,32 @@
 
 #include <unistd.h>
 
-void	ft_ultimate_ft(int *********nb)
+void	ft_div_mod(int a, int b, int *div, int *mod)
 {
-	int	num;
+	int		dival;
+	int		reval;
+	char	x;
+	char	y;
 
-	num = 42;
-	*********nb = num;
+	dival = a / b;
+	reval = a % b;
+	*div = dival;
+	*mod = reval;
+	x = *div + '0';
+	y = *mod + '0';
+	write(1, &x, 1);
+	write(1, &y, 1);
 }
 
 int	main(void)
 {
-	int	z;
-	int	*a;
-	int	**b;
-	int	***c;
-	int	****d;
-	int	*****e;
-	int	******f;
-	int	*******g;
-	int	********h;
-	int	*********i;
+	int	a;
+	int	b;
+	int	div;
+	int	mod;
 
-	z = 0;
-	a = &z;
-	b = &a;
-	c = &b;
-	d = &c;
-	e = &d;
-	f = &e;
-	g = &f;
-	h = &g;
-	i = &h;
-	ft_ultimate_ft(i);
+	a = 4;
+	b = 2;
+	ft_div_mod(a, b, &div, &mod);
 	return (0);
 }

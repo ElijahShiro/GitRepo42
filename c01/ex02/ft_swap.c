@@ -12,37 +12,22 @@
 
 #include <unistd.h>
 
-void	ft_ultimate_ft(int *********nb)
+void	ft_swap(int *a, int *z)
 {
-	int	num;
+	int	b;
 
-	num = 42;
-	*********nb = num;
+	b = *a;
+	*a = *z;
+	*z = b;
 }
 
 int	main(void)
 {
 	int	z;
-	int	*a;
-	int	**b;
-	int	***c;
-	int	****d;
-	int	*****e;
-	int	******f;
-	int	*******g;
-	int	********h;
-	int	*********i;
+	int	a;
 
-	z = 0;
-	a = &z;
-	b = &a;
-	c = &b;
-	d = &c;
-	e = &d;
-	f = &e;
-	g = &f;
-	h = &g;
-	i = &h;
-	ft_ultimate_ft(i);
+	z = 4;
+	a = 2;
+	ft_swap(&a, &z);
 	return (0);
 }

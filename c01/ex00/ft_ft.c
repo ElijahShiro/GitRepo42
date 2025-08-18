@@ -12,17 +12,18 @@
 
 #include <unistd.h>
 
-void ft_ft(int *nb)
+void	ft_ft(int *nb)
 {
-	int  num = 42;
-	*nb = num; 
+	int	num;
+
+	num = 42;
+	*nb = num;
 }
 
+int	main(void)
+{
+	int	var;
 
-int main(void)
-{ 
-	int var;
-	
 	ft_ft(&var);
 	return (0);
 }

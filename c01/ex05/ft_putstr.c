@@ -12,37 +12,21 @@
 
 #include <unistd.h>
 
-void	ft_ultimate_ft(int *********nb)
+void	ft_putstr(char *str)
 {
-	int	num;
-
-	num = 42;
-	*********nb = num;
+	if (*str != '\0')
+	{
+		write(1, str, 1);
+		str++;
+		ft_putstr(str);
+	}
 }
 
 int	main(void)
 {
-	int	z;
-	int	*a;
-	int	**b;
-	int	***c;
-	int	****d;
-	int	*****e;
-	int	******f;
-	int	*******g;
-	int	********h;
-	int	*********i;
+	char	*a;
 
-	z = 0;
-	a = &z;
-	b = &a;
-	c = &b;
-	d = &c;
-	e = &d;
-	f = &e;
-	g = &f;
-	h = &g;
-	i = &h;
-	ft_ultimate_ft(i);
+	a = "bruh";
+	ft_putstr(a);
 	return (0);
 }
