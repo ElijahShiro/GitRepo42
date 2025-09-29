@@ -1,6 +1,6 @@
 void	ft_print_name(char *nb)
 {
-	while(*nb != '\0')
+	while (*nb != '\0')
 	{
 		ft_putchar(*nb);
 		nb++;
@@ -12,11 +12,10 @@ int	main(int argc, char *argv[])
 {
 	int	i;
 
-	if(argc < 2)
-		return(0);
-
+	if (argc < 2)
+		return (0);
 	i = 1;
-	while(argv[i])
+	while (argv[i])
 	{
 		ft_print_name(argv[i]);
 		i++;

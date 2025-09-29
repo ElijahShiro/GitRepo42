@@ -2,14 +2,13 @@ int	ft_strcmp(char *s1, char *s2)
 {
 	while (*s1 != '\0' && *s2 != '\0')
 	{
-		if(*s1 != *s2)
+		if (*s1 != *s2)
 			return (*s1 - *s2);
 		s1++;
 		s2++;
 	}
-	return (*s1 -*s2);
+	return (*s1 - *s2);
 }
-
 
 void	ft_sort_list(char **list, int size)
 {
@@ -38,7 +37,7 @@ void	ft_sort_list(char **list, int size)
 
 void	ft_print_name(char *nb)
 {
-	while(*nb != '\0')
+	while (*nb != '\0')
 	{
 		ft_putchar(*nb);
 		nb++;

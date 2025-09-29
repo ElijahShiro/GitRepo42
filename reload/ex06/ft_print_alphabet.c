@@ -4,7 +4,7 @@ void	ft_print_alphabet(void)
 	char	let;
 
 	i = 97;
-	while(i <= 122)
+	while (i <= 122)
 	{
 		let = i;
 		ft_putchar(let);

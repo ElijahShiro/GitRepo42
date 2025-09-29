@@ -3,7 +3,7 @@ void	ft_foreach(int *tab, int length, void (*f)(int))
 	int	i;
 
 	if (length <= 0)
-		return;
+		return ;
 	i = 0;
 	while (i < length)
 	{

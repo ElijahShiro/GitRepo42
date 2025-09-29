@@ -11,7 +11,7 @@ int	*ft_range(int min, int max)
 	i = 0;
 	size = (max - min);
 	arr = (int *)malloc((size) * sizeof(int));
-	if(!arr)
+	if (!arr)
 		return (NULL);
 	while (i < size)
 	{
