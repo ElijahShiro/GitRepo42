@@ -1,3 +1,5 @@
+#include "libft.h"
+
 void	*ft_memset(void *c, int b, size_t size)
 {
 	size_t			i;
