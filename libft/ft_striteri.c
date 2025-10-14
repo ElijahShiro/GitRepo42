@@ -1,6 +1,6 @@
-triteria(char *s, void (*f)(unsigned int , char*))
+void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {
-	unsigned int     i;
+	unsigned int	i;
 
 	if (!s || !f)
 		return ;

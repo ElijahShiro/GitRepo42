@@ -1,6 +1,6 @@
-void	*ft_memset(void *c, int b, int size)
+void	*ft_memset(void *c, int b, size_t size)
 {
-	int				i;
+	size_t			i;
 	unsigned char	*ptr;
 
 	ptr = (unsigned char *)c;

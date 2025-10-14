@@ -1,7 +1,7 @@
-void	*ft_bzero(void *s, int n)
+void	ft_bzero(void *s, size_t n)
 {
 	unsigned char	*ptr;
-	int				i;
+	size_t			i;
 
 	i = 0;
 	ptr = (unsigned char *)s;
@@ -10,5 +10,4 @@ void	*ft_bzero(void *s, int n)
 		ptr[i] = '\0';
 		i++;
 	}
-	return (s);
 }

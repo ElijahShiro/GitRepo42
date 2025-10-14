@@ -1,4 +1,4 @@
-size_t	strlcat(char *dst, char *src, size_t size)
+size_t	strlcat(char *dst, const char *src, size_t size)
 {
 	size_t	dst_len;
 	size_t	src_len;

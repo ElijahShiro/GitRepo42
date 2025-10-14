@@ -1,6 +1,6 @@
-int	ft_strlen(char *c)
+size_t	ft_strlen(const char *c)
 {
-	int	i;
+	size_t	i;
 
 	i = 0;
 	while (*c++ != '\0')
