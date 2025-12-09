@@ -1,1 +1,0 @@
-Esta es una linea muy muy muy muuuuuuy larga que sirve para comprobar si tu buffer size pequeño es capaz de leer todo esto sin explotar y sin perder memoria por el camino haciendo reallocs constantes.
