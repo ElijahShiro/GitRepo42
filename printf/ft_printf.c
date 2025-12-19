@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_printf.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ecano-mo <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/12/10 12:33:22 by ecano-mo          #+#    #+#             */
+/*   Updated: 2025/12/19 17:48:16 by ecano-mo         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libftprintf.h"
 #include <stdarg.h>
 
@@ -34,8 +46,9 @@ int	ft_printf(const char *format, ...)
 	{
 		if (format[i] == '%')
 		{
-			check = ft_formats(format[i + 1], args);
-			i++;
+			if (format[i + 1] == '\0')
+				return (va_end(args), -1);
+			check = ft_formats(format[++i], args);
 		}
 		else
 			check = ft_print_char(format[i]);

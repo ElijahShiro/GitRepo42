@@ -6,6 +6,7 @@
 ft_printf es una reimplementación de la función printf() de la librería estándar de C. 
 El objetivo de este proyecto es comprender en profundidad el funcionamiento de las funciones variadicas en C, 
 el manejo de argumentos de longitud variable y la gestión estructurada de memoria y salida estándar.
+La función recibe un string que indica el formato en el que se processaran las siguientes variables entradas como parametro. 
 
 Esta librería imita la funcionalidad del `printf` original, dando soporte a las siguientes conversiones:
 - `%c`: Imprime un solo carácter.
@@ -18,6 +19,7 @@ Esta librería imita la funcionalidad del `printf` original, dando soporte a las
 - `%X`: Imprime un número hexadecimal (base 16) en mayúsculas.
 - `%%`: Imprime el símbolo del porcentaje.
 ## Instrucciones
+gcc main.c -L. -lftprintf -o tester
 
 ### Requisitos
 - Compilador gcc.
@@ -29,4 +31,5 @@ Para compilar la librería `libftprintf.a`, ejecuta el siguiente comando en la r
 - make
 
 ### Recursos
-Se ha usado man 3 printf y stackoverflow como referencia
+Se ha usado man 3 printf y stackoverflow como referencia. 
+Se ha usado IA para testear la funcionalidad del proyecto.
